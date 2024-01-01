@@ -2,8 +2,9 @@ ReplicaNumber: 3
 
 containers:
   containerPort: 8080
-  image: 'quay.io/lmoyal/argo:v2'
-  tag: 'base'
+  image: 'quay.io/(quay-userName)/(imageName)'
+  tag: 'chart_v1'
+  
 
 service:
   servicePort: 8080
