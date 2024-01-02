@@ -6,3 +6,18 @@ containers:
   tag: 'chart_v1'
 service:
   servicePort: 8080
+probes:
+  readiness:
+    path: /health/readiness
+    initialDelaySeconds:
+    timeoutSeconds:
+    periodSeconds:
+    successThreshold:
+    failureThreshold:
+  liveness:
+    path:
+    initialDelaySeconds:
+    timeoutSeconds:
+    periodSeconds:
+    successThreshold:
+    failureThreshold:
